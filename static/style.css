@@ -1,0 +1,24 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.hero {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+.hero-img {
+    width: auto;
+    height: 400px;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.post-article {
+    max-width: 800px;
+}
