@@ -3,10 +3,10 @@ from post import Post
 import requests
 
 # Retrieve posts from n:point api
-posts = requests.get("https://api.npoint.io/c790b4d5cab58020d391").json()
+posts = requests.get("https://api.npoint.io/674f5423f73deab1e9a7").json()
 all_posts = []
 for post in posts:
-    post_obj = Post(post['id'], post['title'], post['subtitle'], post['body'])
+    post_obj = Post(post['id'], post['title'], post['subtitle'], post['body'], post['image_url'])
     all_posts.append(post_obj)
 
 app = Flask(__name__)

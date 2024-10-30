@@ -22,3 +22,11 @@ body {
 .post-article {
     max-width: 800px;
 }
+.post-img {
+    width: auto;
+    height: 400px;
+}
+.post-img-index {
+    width: auto;
+    height: 300px;
+}
