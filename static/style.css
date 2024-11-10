@@ -30,3 +30,21 @@ body {
     width: auto;
     height: 300px;
 }
+.content img {
+    max-width: 100%;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+.comment {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+.avatar-size{
+    width: 50px;
+    height: 50px;
+}
