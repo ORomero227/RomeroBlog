@@ -19,7 +19,7 @@
     <body>
         <!--  Navigation Bar     -->
         <header>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                   <div class="container">
                       <a class="navbar-brand" href="{{ url_for('home') }}">RomeroBlog</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,24 +28,24 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                           <ul class="navbar-nav ms-auto">
                               <li class="nav-item">
-                                  <a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('home') }}">Home</a>
+                                  <a class="nav-link" href="{{ url_for('home') }}">Home</a>
                               </li>
                               {% if current_user.id == 1 %}
                                 <li class="nav-item">
-                                  <a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('add_post') }}">New Post</a>
+                                  <a class="nav-link" href="{{ url_for('add_post') }}">New Post</a>
                                 </li>
                                 {% endif %}
                                 <!-- Only show Login/Register if user is logged out, Otherwise show "Log Out" -->
                                 {% if not current_user.is_authenticated: %}
                                 <li class="nav-item">
-                                  <a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('login') }}">Login</a>
+                                  <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('register') }}">Register</a>
+                                  <a class="nav-link" href="{{ url_for('register') }}">Register</a>
                                 </li>
                                 {% else: %}
                                 <li class="nav-item">
-                                  <a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('logout') }}">Log Out</a>
+                                  <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
                                 </li>
                               {% endif %}
                           </ul>
