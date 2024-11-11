@@ -1,23 +1,44 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
 }
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
 }
 .hero {
-    background-color: #f8f9fa;
-    padding: 4rem 0;
+    padding: 12rem 0;
 }
-.hero-img {
-    width: auto;
-    height: 400px;
+.custom-shape-divider-bottom-1731286042 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    border: none;
 }
+
+.custom-shape-divider-bottom-1731286042 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1731286042 .shape-fill {
+    fill: #212529;
+}
+
 .card {
     transition: transform 0.2s;
 }
 .card:hover {
     transform: translateY(-5px);
+}
+.post-body {
+    background-color: #f0f0f0;
 }
 .post-article {
     max-width: 800px;
@@ -25,10 +46,6 @@ body {
 .post-img {
     width: auto;
     height: 400px;
-}
-.post-img-index {
-    width: auto;
-    height: 300px;
 }
 .content img {
     max-width: 100%;
@@ -47,4 +64,10 @@ body {
 .avatar-size{
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 8rem 0 3rem 0;
+    }
 }

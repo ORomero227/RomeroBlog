@@ -3,29 +3,33 @@
 {% block content %}
 <div class="hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h1 class="display-4 fw-bold">Welcome to RomeroBlog</h1>
-                <p class="lead">Discover insightful articles on technology, design, and more.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="static/images/blog-hero-img.webp" alt="Blog hero image" class="img-fluid rounded hero-img">
-            </div>
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">Welcome to RomeroBlog</h1>
+            <p class="lead">Discover insightful articles on technology, design, and more.</p>
+            <a href="#latestPost" class="btn btn-primary">Explore the latest posts</a>
         </div>
     </div>
 </div>
 
-<main class="container my-5">
-    <h2 class="text-center mb-4">Latest Posts</h2>
+<div class="custom-shape-divider-bottom-1731286042">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<main class="container mt-5 py-5 min-vh-100" id="latestPost">
+    <h2 class="text-center mb-5">Latest Posts</h2>
     <div class="row g-4">
         {% for post in all_posts %}
         <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{{ post.card_img_url }}" class="card-img-top post-img-index" alt="{{ post.title }}">
+            <div class="card border-light rounded shadow-sm bg-dark text-white">
+                <img src="{{ post.card_img_url }}" class="card-img-top fixed-card-img" alt="{{ post.title }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">{{ post.subtitle }}</p>
-                    <a href="{{ url_for('show_post', post_id=post.id) }}" class="btn btn-outline-primary">Read More</a>
+                    <div class="d-grid">
+                        <a href="{{ url_for('show_post', post_id=post.id) }}" class="btn btn-primary ">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
