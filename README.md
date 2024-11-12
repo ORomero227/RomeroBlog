@@ -58,3 +58,8 @@ This is a simple blog application built with Flask. It allows users to register,
 
 - The first user created will automatically have admin privileges.
 - Admin users can add, edit, and delete blog posts.
+
+## Gallery
+![RomeroBlogHero](https://github.com/user-attachments/assets/95aa6a45-ff46-4329-85cf-59bb78c43fb9)
+![LatestPosts](https://github.com/user-attachments/assets/2417277c-dd2b-4e6a-b9b3-b0b24fa438cf)
+![PostIndex](https://github.com/user-attachments/assets/5d0bf199-be73-43d8-9c49-b2895eab9263)
