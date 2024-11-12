@@ -63,3 +63,4 @@ This is a simple blog application built with Flask. It allows users to register,
 ![RomeroBlogHero](https://github.com/user-attachments/assets/95aa6a45-ff46-4329-85cf-59bb78c43fb9)
 ![LatestPosts](https://github.com/user-attachments/assets/2417277c-dd2b-4e6a-b9b3-b0b24fa438cf)
 ![PostIndex](https://github.com/user-attachments/assets/5d0bf199-be73-43d8-9c49-b2895eab9263)
+![NewPostForm](https://github.com/user-attachments/assets/48af76f5-e48f-496c-81e6-cc6f1224cec8)
